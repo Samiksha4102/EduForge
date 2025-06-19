@@ -1,0 +1,259 @@
+:root {
+  --primary-blue: #4DA8DA;
+  --accent-mint: #80D8C3;
+  --highlight-yellow: #FFD66B;
+  --background-light: #F5F5F5;
+  --text-dark: #212121;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light);
+  width: 100vw;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+header {
+  background-color: var(--primary-blue);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.welcome-message {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: var(--highlight-yellow);
+  color: var(--primary-blue);
+}
+
+.styled-message {
+  background: linear-gradient(to right, #FF577F, #FF884B);
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  width: 96vw;
+  margin: 2rem auto;
+  
+
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.brand {
+  color: #212121;
+}
+
+.message-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.highlight-text {
+  color: #212121;
+  font-weight: bold;
+}
+
+.signup-button {
+  background-color: #212121;
+  color: #FFC764;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #333333;
+}
+
+.learning-benefits {
+  background-color: var(--accent-mint);
+  padding: 40px 20px;
+  color: var(--text-dark);
+  border-radius: 20px;
+  margin: 2rem auto;
+  width: 96vw;
+  margin: 2rem auto;
+}
+
+.learning-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.learning-text {
+  flex: 1;
+}
+
+.learning-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.learning-text ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.learning-text li {
+  margin-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.learning-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.learning-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.learning-img img {
+  width: 50%;
+  max-width: 300px; /* increase this as needed */
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+
+.course-listing {
+  padding: 40px 20px;
+  background-color: var(--highlight-yellow);
+  color: var(--text-dark);
+  border-radius: 20px;
+  margin: 2rem auto;
+  text-align: center;
+  width: 96vw;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  
+}
+
+.course-listing h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.course-card {
+  background-color: var(--background-light);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reviews-section {
+  background-color: var(--primary-blue);
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  margin: 2rem auto;
+  width: 96vw;
+  margin: 2rem auto;
+}
+
+.reviews-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.review-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.review-card {
+  background-color: white;
+  color: var(--text-dark);
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-blue);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
